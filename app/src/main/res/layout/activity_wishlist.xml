@@ -4,8 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".SearchActivity">
+    android:layout_height="match_parent">
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
@@ -23,12 +22,10 @@
                 android:layout_marginEnd="32dp"
                 android:layout_marginTop="16dp"
                 android:textStyle="bold"
-                android:drawableStart="@drawable/baseline_arrow_back_ios_24"
                 android:padding="8dp"
                 android:drawablePadding="70dp"
                 android:ems="10"
-                android:text="MY WHISHLIST"
-                android:drawableEnd="@drawable/baseline_shopping_cart_24"/>
+                android:text="MY WHISHLIST" />
 
         </com.google.android.material.appbar.MaterialToolbar>
 
@@ -86,7 +83,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="200dp"
                 android:layout_marginStart="6dp"
-                app:strokeColor="@color/white">
+                app:strokeColor="@color/white"
+                tools:ignore="NotSibling">
 
                 <ImageView
                     android:layout_width="148dp"

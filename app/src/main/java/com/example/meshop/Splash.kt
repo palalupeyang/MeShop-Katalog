@@ -16,7 +16,8 @@ class Splash : AppCompatActivity() {
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
-            val intent = Intent(this, SignIn::class.java)
+            val intent = Intent(this, MainActivity::class.java)
+            intent.putExtra("showHomeFragment", true)
             startActivity(intent)
             finish()
         }, 3000)
