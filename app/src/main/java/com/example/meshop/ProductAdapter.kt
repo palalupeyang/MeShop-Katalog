@@ -8,7 +8,7 @@ import com.example.meshop.R
 
 class ProductAdapter(private val productList: List<ProductItem>) : RecyclerView.Adapter<ProductAdapter.ProductViewHolder>() {
 
-    data class ProductItem(val productName: String, val imageResId: Int)
+    data class ProductItem(val productName: String, val imageResId: Int, val hargaProduk: String)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ProductViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.item_product, parent, false)
@@ -25,10 +25,12 @@ class ProductAdapter(private val productList: List<ProductItem>) : RecyclerView.
     inner class ProductViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private val productImageView: ImageView = itemView.findViewById(R.id.productImageView)
         private val productNameTextView: TextView = itemView.findViewById(R.id.productNameTextView)
+        private val hargaTextView: TextView = itemView.findViewById(R.id.hargaTextView)
 
         fun bind(item: ProductItem) {
             productImageView.setImageResource(item.imageResId)
             productNameTextView.text = item.productName
+            hargaTextView.text = item.hargaProduk
         }
     }
 }

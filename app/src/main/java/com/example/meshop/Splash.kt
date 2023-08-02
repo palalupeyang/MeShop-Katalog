@@ -1,10 +1,10 @@
 package com.example.meshop
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import androidx.appcompat.app.AppCompatActivity
 
 class Splash : AppCompatActivity() {
 
@@ -16,8 +16,7 @@ class Splash : AppCompatActivity() {
 
         val handler = Handler(Looper.getMainLooper())
         handler.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
-            intent.putExtra("showHomeFragment", true)
+            val intent = Intent(this, SignIn::class.java)
             startActivity(intent)
             finish()
         }, 3000)

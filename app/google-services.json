@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "134624091826",
+    "firebase_url": "https://meshop-decea-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "meshop-decea",
+    "storage_bucket": "meshop-decea.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:134624091826:android:3376eb3b6e01c8d91a33ab",
+        "android_client_info": {
+          "package_name": "com.example.meshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "134624091826-0ptb8v6p95sclbt78b8vgom41f73f94f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCUuZ2a1dLCnw01_pDFwuliYSPqtz4X7UM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "134624091826-0ptb8v6p95sclbt78b8vgom41f73f94f.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.ViewPager2
 import com.example.meshop.R
-import com.example.meshop.SearchActivity
 
 class HomeFragment : Fragment() {
 
@@ -29,12 +28,12 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
 
         val productList = listOf(
-            ProductAdapter.ProductItem("Case HP", R.drawable.case_1),
-            ProductAdapter.ProductItem("Sarung Wadimor", R.drawable.produk_2),
-            ProductAdapter.ProductItem("Cipcek Garut", R.drawable.produk_3),
-            ProductAdapter.ProductItem("Olahan Kulit Jeruk", R.drawable.produk_4),
-            ProductAdapter.ProductItem("Sepatu Wanita", R.drawable.produk_5),
-            ProductAdapter.ProductItem("Sepatu Pria", R.drawable.produk_6)
+            ProductAdapter.ProductItem("Peely Orange", R.drawable.produk1,"Rp. 20000"),
+            ProductAdapter.ProductItem("Oseng Mercon", R.drawable.produk11,"Rp. 15000"),
+            ProductAdapter.ProductItem("Rengginang Bikin Senang", R.drawable.produk17,"Rp. 12500"),
+            ProductAdapter.ProductItem("Sosis Frozen Koyama", R.drawable.produk5,"Rp. 32000"),
+            ProductAdapter.ProductItem("Rendang Tendewon", R.drawable.produk13,"Rp. 25000"),
+            ProductAdapter.ProductItem("Papisang" ,R.drawable.produk9,"Rp. 11000")
         )
         recyclerView = view.findViewById(R.id.recyclerView)
         recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
@@ -56,12 +55,6 @@ class HomeFragment : Fragment() {
                 updateDots(position)
             }
         })
-
-        val searchView = view.findViewById<SearchView>(R.id.searchView)
-        searchView.setOnSearchClickListener {
-            val intent = Intent(requireContext(), SearchActivity::class.java)
-            startActivity(intent)
-        }
 
         return view
     }
